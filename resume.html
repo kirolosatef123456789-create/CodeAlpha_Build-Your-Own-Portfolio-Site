@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+        font-family: 'Poppins', sans-serif;
+        }
+        .resume-image{
+            overflow:hidden;
+            box-shadow:0 4px 12px rgba(0,0,0,.1);
+            background-color: rgb(231, 231, 231);
+            border-radius: 25px;
+            width: 950px;
+            max-width: 95%;
+            height: 100%;
+            margin: 0 auto;
+        }
+        .resume-image img{
+            width: 100%;
+            height: auto;
+            display: block;
+            padding-bottom: 30px;
+        }
+        .download-btn{
+            width: 100%;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            transition: all 0.3s ease;
+        }
+        a:hover{
+            color: blue;
+            transition: all 0.3s ease;
+        }
+        .btn{
+            justify-content: center;
+            display: flex;
+            width: 200px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,.2);
+            background-color: white;
+            border-radius: 20px;
+            margin: 0 auto;
+            transition: 0.3s;
+        }
+        .btn:hover{
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-image">
+        <div><img src="Resume.png" alt=""></div>
+    </div> 
+    <div class="btn">
+        <a href="kerollos-atef.pdf" download="kerollos_Atef_Resume.pdf" class="download-btn">Download resume</a>
+    </div>   
+</body>
+</html>

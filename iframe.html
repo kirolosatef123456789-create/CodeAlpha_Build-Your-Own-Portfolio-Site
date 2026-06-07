@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        div{
+            display: flex;
+            justify-content: center;
+        }
+        a{
+            font-family: 'Poppins', sans-serif;
+            font-size: xx-large;
+            position: relative;
+            color: blue;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        a:hover{
+            color: red;
+            transition: all 0.3s ease;
+        }
+        a::after{
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: red;
+            left: 50%;
+            bottom: -5px;
+            transform: translateX(-50%);
+            transition: all 0.3s ease;
+        }
+        a:hover::after{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+   <div><a href="resume.html" target="frame">View Resume</a></div>
+</body>
+</html>
