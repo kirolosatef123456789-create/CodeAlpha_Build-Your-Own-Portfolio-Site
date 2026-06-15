@@ -221,6 +221,7 @@ iframe{
     .nav-bar{
         padding: 10px;
         justify-content: center;
+        gap: 40px;
     }
 
     .nav-bar ul{
