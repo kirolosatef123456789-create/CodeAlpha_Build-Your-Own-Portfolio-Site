@@ -13,18 +13,19 @@
     <header class="nav-bar">
         <nav>
             <ul class="nav-links">
-                <li><a href="#about-me">About me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">My projects</a></li>
-                <li><a href="#Contact">Contact Info</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#about-me" class="links">About me</a></li>
+                <li><a href="#skills" class="links">Skills</a></li>
+                <li><a href="#projects" class="links">My projects</a></li>
+                <li><a href="#Contact" class="links">Contact Info</a></li>
+                <li><a href="#resume" class="links">Resume</a></li>
+                <li><a href="#certificates" class="links">Certificates</a></li>
+                <li style="padding-left: 100px;"><button id="colorBtn">Dark Mode</button></li>
             </ul>
         </nav>
     </header>
     <div class="me">
         <div class="personal-photo">
-            <img src="personal-photo.jpeg" alt="personal photo">
+            <img src="my face.jpeg" alt="personal photo">
         </div>
         <div class="info">
             <div class="info1">Kerollos Atef</div>
@@ -49,6 +50,7 @@
                 <li>HTML & CSS (Intermediate)</li>
                 <li>C# (Beginner)</li>
                 <li>C++ (Beginner)</li>
+                <li>JavaScript (Beginner)</li>
                 <li>Teamwork</li>
                 <li>Problem Solving</li>
             </ul> 
@@ -67,9 +69,10 @@
     <section id="Contact">
         <div>
             <h2>To contact me:</h2>
-            <p>
-                My personal number: <a href="https://wa.me/201206013870" title="Whatsapp" target="_blank">01206013870</a>
-            </p>
+            <ul>
+                <li>My personal number: <a href="https://wa.me/201206013870" title="Whatsapp" target="_blank">01206013870</a></li>
+                <li>Instagram: <a href="https://www.instagram.com/koko_atef321/">My Profile</a></li>
+            </ul>
         </div>
     </section>
     <section id="resume">
@@ -78,7 +81,6 @@
         </div>
     </section>
     <section id="certificates">
-        <h2>My Certificates</h2>
         <div class="certificates-container">
             <img src="Certificate1.jpeg" alt="">
             <div class="ACC-info">
@@ -98,3 +100,14 @@
     </section>
 </body>
 </html>
+<script>
+    const btn = document.getElementById("colorBtn");
+    btn.addEventListener("click", function () {
+        document.body.classList.toggle("dark")
+        if (document.body.classList.contains("dark")) {
+            btn.textContent = "Light Mode"
+        }else{
+            btn.textContent = "Dark Mode"
+        }
+    });
+</script>
