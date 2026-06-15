@@ -291,6 +291,7 @@ iframe{
     }
     .btn-container{
         padding-left: 2px;
+        padding-right: 5px;
     }
     section{
         scroll-margin-top: 80px;
