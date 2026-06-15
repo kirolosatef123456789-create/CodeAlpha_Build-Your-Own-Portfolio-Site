@@ -9,6 +9,32 @@ body{
     width: 100%;
     font-family: 'Poppins', sans-serif;
 }
+.dark{
+    background-color: #121212;
+    color: gold;
+}
+.dark #certificates{
+    color: #121212;
+}
+.dark .links{
+    color: gold;
+}
+.dark #colorBtn{
+    background-color: white;
+    color: black;
+}
+#colorBtn{
+    border: none;
+    border-radius: 25px;
+    background-color: black;
+    color: gold;
+    width: 90px;
+    height: 40px;
+    transition: all 0.3s ease;
+}
+#colorBtn:hover{
+    cursor: pointer;
+}
 .nav-bar{
     position: sticky;
     top: 0;
