@@ -105,6 +105,32 @@ body{
     align-items: center;
     font-size: 50px;
 }
+#myname {
+    width: 11ch;
+    overflow: hidden;
+    white-space: nowrap;
+
+    animation:
+        typing 1.5s steps(11),
+        cursor .8s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 11ch;
+    }
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
 .about-me{
     padding: 15px 20px;
     font-size: large;
